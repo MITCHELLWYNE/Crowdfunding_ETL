@@ -25,3 +25,29 @@ campaign csv:
 
 ![This is a screenshot of the campaign df](https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/9f31b1b7abe62e6b830dc1a66f13ef3423cb181a/Starter_Files/Resources/Campaign_df_cleaned.png)
 
+## Create the Contacts DataFrame
+The first step was to read in the excel file, contacts.xlsx and save it as a data frame. This data frame consisted of a single column that needed to be separated into multiple columns.
+### Option 1: Using Pandas to create the contacts DataFrame
+1. Iterate through the dataframe and convert each row to dictionary
+2. Create a dataframe and add in the dictionary values 
+3. Rename columns
+4. Check data types
+5. Split the name category into first and last columns using str.split
+6. Drop concatanated name column
+7. Reorder columns
+8. Export to csv
+
+![This is a screenshot of the df created using option 1](https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/10b96f356fd89c33ef073be0699642725dd99d86/Starter_Files/Resources/Opt1_clean_df.png)
+
+### Option 2: Use regex to create the contacts DataFrame 
+To extract data for column separation, regex expressions were used to pull desired data out of the singular column. 
+* The first expression used was (\d{4}), to extract the name 
+  * \d matches numerical didgit and the {4} sets a limit of 4 digits
+* The next expression utilized for both extracting the name and email was ([^"]*)
+  * The [] denote a character set. The ^ matches the expression to the right of the following character, which in this case is the ". The * matches zero or more appearances
+* The final expression used was (\w+)\s+(\w+)$
+  * The \w matches the following alpha numerical character and the + indicates that it should match one or greater occurences. The \s+ indicates a space. The $ matches the end of the string to the left. 
+
+![This is a screenshot of the df created using option 2](https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/262b10d1ddae2d0446a4b6258b755255b8182ed7/Starter_Files/Resources/Opt2_clean_df.png)
+
+
