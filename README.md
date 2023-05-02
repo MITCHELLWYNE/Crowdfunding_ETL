@@ -15,3 +15,14 @@ subcategory csv:
 ![This is a screenshot of the subcategory df](https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/a33377cf1f7874cc54c16126d4db23f977303e1c/Starter_Files/Resources/subcategory_screenshot.png)
 
 ## Create the Campaign DataFrame
+To create the campaign dataframe, the excel file, crowdfunding.xlsx, was extracted and transformed. 
+The fist step was to create a copy of the initial data to work of of in order to protect the initial data. This new data frame was called campaign_df. Cpecific columns were renamed for clarity. Data types were checked and changed to be appropriate for the data. Columns with dates were transformed into datetime format using the datetime library. 
+
+Next, the campaign and category dataframes were merged on the "category" column and the subcategory_df on the "subcategory" column. This merged dataframe was then cleaned of any unwanted columns. and exported to a csv file (link below)
+
+campaign csv:
+[Link to campaign.csv](https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/95ecb8a5b9f7e22e356a6248a6a179c59058a277/Starter_Files/Resources/campaign.csv)
+
+![This is a screenshot of the campaign df]
+(https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/9f31b1b7abe62e6b830dc1a66f13ef3423cb181a/Starter_Files/Resources/Campaign_df_cleaned.png)
+
