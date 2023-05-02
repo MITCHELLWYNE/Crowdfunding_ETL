@@ -23,6 +23,5 @@ Next, the campaign and category dataframes were merged on the "category" column 
 campaign csv:
 [Link to campaign.csv](https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/95ecb8a5b9f7e22e356a6248a6a179c59058a277/Starter_Files/Resources/campaign.csv)
 
-![This is a screenshot of the campaign df]
-(https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/9f31b1b7abe62e6b830dc1a66f13ef3423cb181a/Starter_Files/Resources/Campaign_df_cleaned.png)
+![This is a screenshot of the campaign df](https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/9f31b1b7abe62e6b830dc1a66f13ef3423cb181a/Starter_Files/Resources/Campaign_df_cleaned.png)
 
