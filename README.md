@@ -51,3 +51,6 @@ To extract data for column separation, regex expressions were used to pull desir
 ![This is a screenshot of the df created using option 2](https://github.com/MITCHELLWYNE/Crowdfunding_ETL/blob/262b10d1ddae2d0446a4b6258b755255b8182ed7/Starter_Files/Resources/Opt2_clean_df.png)
 
 
+## A Crowdfunding Database is Created
+Using Quick DBD a data base schema, crowdfunding_db_schema.sql, was created to create a database, crowdfunding_db.
+Tables were given Primary and Foriegn Keys as needed. The csv files were imported into the database tables. Data from each table was imported using SELECT *. 
